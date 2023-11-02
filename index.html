@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFR2GFKT75"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-RFR2GFKT75');
+  </script> -->
+  <!-- Google Tag Manager -->
+  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  })(window,document,'script','dataLayer','GTM-NC38VTD');</script> -->
+  <!-- End Google Tag Manager -->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="refresh" content="0; URL=https://cs.stanford.edu/~leoyuan/"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  
+	<!-- <meta name="google-site-verification" content="u_--0s_Uw50r4zCgRrzltkmFhNCduYOJwPGlKVTuNJU" /> -->
+
+  <title>Zhuoran Li</title>
+  <meta name="description" lang="en" content="This is an academic website for Zhuoran Li">
+  <meta name="keywords" lang="en" content="Zhuoran Li" />
+  
+
+  <link rel="shortcut icon" href="images/icon/z.jpg">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- <link rel="canonical" href="https://cs.stanford.edu/~leoyuan/"> -->
+  <!-- <link rel="alternate" type="application/rss+xml" title="Zeqing (Leo) Yuan" href="https://LeoYuan0111.github.io/feed.xml" /> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/academicons.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+
+
+  <script src="js/jquery-2.1.3.min.js"> </script>
+
+  <!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+</script>
+<![endif]-->
+
+  <script type="text/javascript">
+    function ShowHide(divId, linkDivId) {
+        if(document.getElementById(divId).style.display == 'none') {
+            document.getElementById(divId).style.display='block';
+            document.getElementById(linkDivId).style.display='none'; // Hide the "read more" link
+        }
+        else {
+            document.getElementById(divId).style.display = 'none';
+        }
+    }
+  </script>
+
+  <style>
+    /* 为所有列表项设置样式 */
+    li.indented {
+        position: relative;
+        padding-left: 120px; /* 这是对齐效果的关键，可以根据实际内容调整这个值 */
+    }
+
+    li.indented::before {
+        content: attr(data-date);
+        position: absolute;
+        left: 0;
+        top: 0;
+        white-space: nowrap;
+    }
+  </style>
+  
+</head>
+
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC38VTD"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+<!-- End Google Tag Manager (noscript) -->
+
+    <header class="site-header">
+
+  <div class="wrapper">
+<nav class="site-nav">
+  <a href="#" class="menu-icon">
+    <svg viewBox="0 0 18 15">
+      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+      <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+      <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+    </svg>
+  </a>
+
+  <div class="trigger">
+    <a class="page-link" href="#bio"><b>Biography</b></a>
+    <a class="page-link" href="#publications"><b>Publications</b></a>
+    <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
+    <a class="page-link" href="#timeline"><b>Experiences</b></a>
+    <a class="page-link" href="#teaching"><b>Teaching</b></a>
+    <a class="page-link" href="#misc"><b>Misc</b></a>
+    <!-- <a class="page-link" href="files/CV.pdf"><b>CV</b></a> -->
+    <!--<a class="page-link" href="#otherprojects">Projects</a>-->
+    <!-- Button for Posts -->
+  </div>
+</nav>
+  </div>
+</header>
+
+  <div id="profile-cover" class="cover shallow-bg img-responsive"> 
+    <div id="profile-namecard" class="profile-wrapper wrapper-light">
+      <div id="my-pic" class="profile-col profile-col-1">
+        <img id="profile-avatar" src="./images/self-portrait/me.jpg" alt="Me" class="circle-img border-dark"-/>
+      </div>
+      <div id="my-contact" class="profile-col profile-col-2">
+        <div id="my-name" class="text-grey-dark">
+          Zhuoran Li<br>
+        </div>
+        <div id="my-title" class="text-grey">
+          Robotics & Embodied AI Researcher Undergraduate @NUS
+        </div>
+        <div id="my-email" class="text-grey-light">
+          zhuoran.li [at] u [dot] nus [dot] edu
+        </div>
+
+        <div class="social-media">
+          <a href="https://scholar.google.com/citations?user=NcQERBIAAAAJ&hl=en" class="icon-button github">
+          <i class="ai ai-google-scholar-square icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://github.com/DavidLzr" class="icon-button github">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+          
+          <!--
+            <a href="https://www.linkedin.com/in/zhuoran-li-david/" class="icon-button linkedin">
+            <i class="fa fa-linkedin icon-linkedin"></i>
+            <span></span>
+          </a>
+          -->
+          
+          <a href="https://twitter.com/david_zhuoranli" class="icon-button twitter">
+            <i class="fa fa-twitter icon-twitter"></i>
+            <span></span>
+          </a>
+         
+          <a href="files/zhuoran_li_cv.pdf" class="icon-button github">
+            <i class="ai ai-cv icon-github"></i>
+            <span></span>
+          </a>
+        </div>
+      </div>
+
+      <!--
+      <div id="my-desc" class="profile-col profile-col-2 hide">
+        <div id="my-desc-title">
+          Another me.
+        </div>
+        <div id="my-desc-content">
+          I am a sports enthusiast and badminton provincial champion🥇<br>
+          I also enjoy hiking🥾, movies, music and so much more<br>
+          Feel free to shoot me an email :)
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+  <!-- <script type="text/javascript">
+    function deepFeature()
+    {
+      $('#profile-avatar').attr('src', 'images/self-portrait/deep-me.jpg');
+      $('#profile-avatar').removeClass('border-dark');
+      $('#profile-avatar').addClass('border-bright');
+
+      $('#profile-cover').removeClass('shallow-bg');
+      $('#profile-cover').addClass('deep-bg');
+      
+      $('#profile-namecard').removeClass('wrapper-light');
+      $('#profile-namecard').addClass('wrapper-dark');
+      
+      $('#my-desc').removeClass('hide');
+      $('#my-contact').addClass('hide');    
+      // console.log('Move in now...');
+    }
+
+    function shallowFeature()
+    {
+      $('#profile-avatar').attr('src', 'images/self-portrait/me.jpg');
+      $('#profile-avatar').removeClass('border-bright');
+      $('#profile-avatar').addClass('border-dark');
+
+      $('#profile-cover').removeClass('deep-bg');
+      $('#profile-cover').addClass('shallow-bg');
+      
+      $('#profile-namecard').removeClass('wrapper-dark');
+      $('#profile-namecard').addClass('wrapper-light');
+      
+      $('#my-contact').removeClass('hide');
+      $('#my-desc').addClass('hide');
+      // console.log('Move out now...');
+    }
+
+    $(function() { 
+      $('#my-pic').hover(deepFeature, shallowFeature);
+    })
+
+  </script> -->
+
+<div class="page-content">
+<div class="wrapper">
+<div id="bio" class="bio">
+
+  <h1 class="md-heading text-left">
+    <i class="fa fa-id-card" aria-hidden="true"></i>
+    About
+  </h1>
+  <div class="bio-body" style="overflow:hidden;">
+    <p>
+      Hii, I am a senior undergraduate student at 
+      <a href="https://nus.edu.sg/">National University of Singapore (NUS)</a>, <a href="https://www.stat.nus.edu.sg/">Department of Statistics and Data Science</a>. 
+      I have had a wonderful research experience at <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab (SVL)</a>, working on the ideal scene representation for Embodied AI by leveraging foundation models, as an undergraduate visiting research intern, and I am grateful to be advised by 
+      <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a> and <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a>. I am also a research assistant at <a href="https://yunzhuli.github.io/#Group">Robotic Perception, Interaction, and Learning Lab (RoboPIL)</a> working with <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a> on robot interactive scene exploration via large language models (LLMs).
+      <br><br>
+      I work at the intersection of robotics, computer vision, and machine learning. Specifically, I focus on Embodied AI and 
+      aim to develop algorithms that enable intelligent systems to learn from their interactions with the physical world, and autonomously acquire the skills necessary to execute complex tasks and assist people.
+      <!-- My goal is to construct intelligent systems that can comprehend, generate, and interact with our 3D world.  -->
+      <!-- Previously I have also done engaging projects on HCI. -->
+      <!-- Beyond that, I am deeply intrigued by exploring the fundamental principles that underpin human cognitive processes. -->
+      <br><br>
+      <b>I am actively looking for MS/PhD positions starting in Fall 2024! I would love to chat more if you think I might be a good fit for your lab :)</b>
+      <br><br>
+    </p>
+
+    <div style="width: 50%; float:left">
+			<h3>
+		    <i class="fa fa-star" aria-hidden="true"></i>
+		    <strong>Research Interests</strong>
+			</h3>
+      <!-- <b>Machine Learning</b>
+      <ul>
+        <li>Generative Modeling</li>
+      </ul> -->
+      <!--
+      <ul>
+        <li>3D Scene Understanding</li>
+        <li>Video Understanding</li>
+      </ul>
+      -->
+      <ul>
+        <li>Robotics and Embodied AI</li>
+        <li>Robotic Manipulation</li>
+        <li>Large Language Models for Embodied AI</li>
+        <li>Multi-Modal Perception</li>
+        <li>Physical Scene Understanding</li>
+        <li>Reinforcement Learning and Imitation Learning</li>
+        <li>Intelligent Systems</li>
+      </ul>
+      <!--
+        <b>Embodied AI</b>
+      <b>Robotic Manipulation</b>
+      <b>Multi-Modal Perception</b>
+      <b>Physical Scene Understanding</b>
+      <b>Large Language Models</b>
+      <b>Reinforcement Learning and Imitation Learning</b>
+      <b>Intelligent Systems</b>
+      -->
+    </div>
+
+    <div style="width: 50%; float:right">
+			<h3>
+				<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+				<strong>Education</strong>
+			</h3>
+			<b>National University of Singapore</b><br>
+			<ul>
+        <li>B.S.(Honors) in Data Science and Analytics</li>
+        <li>Minoring in Computer Science</li>
+        <li>GPA: 4.74 / 5.0</li>
+        <li>1st Class Honors, Highest Distinction (expected, upon graduation)</li>
+			</ul>
+    </div>
+  
+  </div>
+</div>
+
+
+<!--
+<div id="news" class="bio">
+  <h1 class="md-heading text-left">
+    <i class="fa fa-tasks" aria-hidden="true"></i>
+    News
+  </h1>  
+  <ul>
+    <li class="indented" data-date="[Oct, 2023]"> <a href="http://www.cs.zju.edu.cn/turingclass_en/2023/1023/c51325a2815951/page.htm">Awarded the highest honor at Zhejiang University, Chu Kochen Presidential Scholarship</a> (12/~24,000)</li>
+    <li class="indented" data-date="[Oct, 2023]"> Awarded my 3rd National Scholarship (Top 0.2%)</li>
+    <li class="indented" data-date="[Aug, 2023]"> One paper submitted</li>
+    <li class="indented" data-date="[Jul, 2023]"> One patent accepted</li>
+    <li class="indented" data-date="[Dec, 2022]"> Awarded SenseTime Scholarship</a></li>
+    <li class="indented" data-date="[Oct, 2022]"> One work receives People's Choice Award in ACM MobileHCI</li>
+    <li class="indented" data-date="[Jun, 2021]"> One paper accepted to IEEE VIS and TVCG</li>
+  </ul>
+</div>
+-->
+
+
+<div id="publications" class="publications">
+  <h1 class="md-heading text-left">
+    <i class="fa fa-file" aria-hidden="true"></i>
+    Publications
+  </h1>
+  <div class="equal-contribution-notice">
+    <font style="font-size: 12pt;">
+      (* indicates equal contribution)
+    </font>
+  </div>
+  <div class="pub-list">
+    
+    <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img frame" src="publications/d3fields.gif">
+      </div>
+      <div class="pub-right">
+        <div class="title">
+          D<sup>3</sup>Fields: Dynamic 3D Descriptor Fields for Zero-Shot Generalizable Robotic Manipulation
+        </div>
+        <!--
+          <div class="desc">
+          TL;DR Recognizing high-level techniques for sports video analysis by leveraging sparse visual information and contextual domain knowledge
+        </div>
+        -->
+        <div class="authors">
+          <font style="font-size: 12pt;">
+            <a class="author" href="https://wangyixuan12.github.io/">Yixuan Wang*</a>,
+            <a class="author" href=""><b>Zhuoran Li*</b></a>,
+            <a class="author" href="https://robo-alex.github.io/">Mingtong Zhang</a>,
+            <a class="author" href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>,
+            <a class="author" href="https://jiajunwu.com/">Jiajun Wu</a>,
+            <a class="author" href="https://profiles.stanford.edu/fei-fei-li/">Li Fei-Fei</a>,
+            <a class="author" href="https://yunzhuli.github.io/">Yunzhu Li</a><br>
+          </font>
+          <font style="font-size: 11pt;">
+            <i>International Conference on Robotics and Automation (ICRA)</i>, 2024 (Under Review)<br>
+            <i>Accepted by Conference on Robot Learning (CoRL) Workshop on Towards Generalist Robots: Learning Paradigms for Scalable Skill Acquisition</i>, 2023<br>
+            <i>Accepted by Conference on Neural Information Processing Systems (NeurIPS) 6th Robot Learning Workshop: Pretraining, Fine-Tuning, and Generalization with Large Scale Models </i>, 2023<br>
+            <i>Accepted by Conference on Neural Information Processing Systems (NeurIPS) Workshop on Foundation Models for Decision Making</i>, 2023<br>
+          </font>
+        </div>
+        <!--
+        <div class="publish">
+          <span class="publisher">Under Review</span>
+          <span class="place"></span>
+        </div>
+        -->
+        <div class="tags">
+          [<a class="tag" href="https://robopil.github.io/d3fields/"><strong>Project Page</strong></a>]
+          [<a class="tag" href="https://robopil.github.io/d3fields/d3fields.pdf"><strong>Paper</strong></a>]
+          [<a class="tag" href="https://github.com/WangYixuan12/d3fields"><strong>Code</strong></a>]
+        </div>
+        <!--
+          <div class="desc">
+          By leveraging foundation models, D$^3$Fields is an ideal scene representation for Embodied AI, which is 3D, dynamic, and semantic. It supports goal specification using 2D images with varied styles, contexts, and instances
+          and zero-shot generalizable manipulation applicable to a broad spectrum of household tasks.
+        </div>
+        -->
+      </div>
+    </div>
+
+    <!--
+    <div class="pub">
+      <div class="pub-left">
+        <img class="intro-img frame" src="publications/TIVEE.png">
+      </div>
+      <div class="pub-right">
+        <div class="title">
+          TIVEE: Visual Exploration and Explanation of Badminton Tactics in Immersive Visualizations
+        </div>
+        <div class="desc">
+          TLDR; 3D visualization and VR interaction for immersive sports analysis
+        </div>
+        <div class="authors">
+          <font style="font-size: 11pt;">
+            <a class="author" href="https://sheaton1.github.io/"> Xiangtong Chu</a>,
+            <a class="author" href="https://ssxiexiao.github.io/"> Xiao Xie</a>,
+            <a class="author" href="">Shuainan Ye</a>,
+            <a class="author" href="">Haolin Lu</a>,
+            <a class="author" href="">Hongguang Xiao</a>,
+            <a class="author" href="https://leoyuan.site"><b>Zeqing Yuan</b></a>,
+            <a class="author" href="https://chenzhutian.org/">Zhutian Chen</a>,
+            <a class="author" href="http://www.ycwu.org/">Yingcai Wu</a>
+          </font>
+          </span>
+        </div>
+        <div class="publish">
+          <span class="publisher">IEEE TVCG (VIS 2021)</span>
+          <span class="place"></span>
+        </div>
+        <div class="tags">
+          [<a class="tag" href="https://zjuidg.org/source/projects/TIVEE/TIVEE.pdf"><strong>Paper</strong></a>]
+          [<a class="tag" href="https://ieeexplore.ieee.org/abstract/document/9557225"><strong>www</strong></a>]
+          [<a class="tag" href="https://www.youtube.com/watch?v=4j5CL5HamQQ"><strong>Video</strong></a>]
+        </div>
+      </div>
+    </div>
+        -->
+
+  </div>
+</div>
+</div>
+
+
+<div class="wrapper">
+  <div id="awards" class="bio">
+    <h1 class="md-heading text-left">
+      <i class="fa fa-tasks" aria-hidden="true"></i>
+      Selected Honors & Awards 
+    </h1>
+    <ul>
+      <li><b>Dean's List</b>, NUS</li>
+      <li><b>Certificate of Oustanding Performance & Top Students</b> in CS4243 Computer Vision and Pattern Recognition (<b>graduate level course</b>), NUS</li>
+      <li><b>Certificate of Best Project Award</b> in CS4246/CS5446 AI Planning and Decision Making (<b>graduate level course</b>), NUS</li>
+      <li><b>The Science & Technology Undergraduate Scholarship</b> (an undergraduate <b>full scholarship</b> offered to support outstanding students), NUS & Singapore Ministry of Education</li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper">
+<div id="timeline" class="timeline-brief">
+  <h1 class="md-heading text-left">
+    <i class="fa fa-tasks" aria-hidden="true"></i>
+    Experiences
+  </h1>
+
+  <div class="timeline-body">
+    <!--
+      <div class="timeline-item">
+      <div class="timeline-date">
+        <img class="social-icon" src="images/icon/stanford.png"/>
+        <img class="social-icon" src="images/icon/zju.png"/>
+        In-progress Projects: ...
+      </div>
+      <div class="timeline-host">
+      </div>
+    </div>
+    -->
+    
+    <!-- <div class="timeline-item">
+      <div class="timeline-date">
+        <img class="social-icon" src="images/icon/stanford.png"/>
+        2023 Jun. - Present
+      </div>
+      <div class="timeline-title">
+        Visiting Research Student @ Stanford
+      </div>
+      <div class="timeline-desc">
+        <a href="https://svl.stanford.edu/">Stanford Vision & Learning Lab</a><br>
+        Work on zero-shot image-to-3D scene layout generation
+      </div>
+      <div class="timeline-host">
+      </div>
+    </div> -->
+    
+    <!-- <div class="timeline-item">
+      <div class="timeline-date">
+        <img class="social-icon" src="images/icon/zju.png"/>
+        2022 Jul. - Present
+      </div>
+      <div class="timeline-title">
+        Undergraduate Researcher @ ZJU
+      </div>
+      <div class="timeline-desc">
+        Final Year Project on visual generative models
+      </div>
+      <div class="timeline-host">
+        Supervisor: <a href='https://cshen.github.io/'>Prof. Chunhua Shen</a><br>
+      </div>
+      <div class="timeline-desc">
+        Project on Large Language Models
+      </div>
+      <div class="timeline-host">
+        Supervisor: <a href="http://jakezhao.net/">Prof. Jake Zhao</a>
+      </div>
+    </div> -->
+
+    <div class="timeline-item">
+      <div class="timeline-date">
+        <img class="social-icon" src="images/icon/uiuc.png"/>
+        Oct. 2023 - Present
+      </div>
+      <div class="timeline-title">
+	      Undergraduate Research Assistant @ UIUC
+      </div>
+      <div class="timeline-desc">
+        <a href="https://yunzhuli.github.io/#Group"><b>Robotic Perception, Interaction, and Learning Lab (RoboPIL)</b></a><br>
+        <b>Advisor:</b> <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a><br>
+        Work on robot interactive scene exploration and scene graph building via large language models (LLMs).
+      </div>
+      <!--
+        <div class="timeline-host">
+        Supervisor: <a href="http://www.ycwu.org/">Prof. Yingcai Wu</a>
+      </div>
+      -->
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">
+        <img class="social-icon" src="images/icon/stanford.png"/>
+        Apr. 2023 - Present
+      </div>
+      <div class="timeline-title">
+	      Undergraduate Visiting Research Intern @ Stanford
+      </div>
+      <div class="timeline-desc">
+        <a href="https://svl.stanford.edu/"><b>Stanford Vision and Learning Lab (SVL)</b></a><br>
+        <b>Advisor:</b> <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a> and <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a><br>
+        Work on the ideal scene representation for Embodied AI by leveraging foundation models, which is 3D, dynamic, and semantic. 
+        <!--
+           Our ideal representation, D$^3$Fields, supports goal specification using 2D images with varied styles, contexts, and instances 
+          and <b>zero-shot</b> generalizable manipulation applicable to a broad spectrum of household tasks.<br>
+          Also work on other Embodied AI related projects.
+        -->
+      </div>
+      <!--
+        <div class="timeline-host">
+        Supervisor: <a href="http://www.ycwu.org/">Prof. Yingcai Wu</a>
+      </div>
+      -->
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">
+        <img class="social-icon" src="images/icon/NUS.jpg"/>
+        Jan. 2021 - Aug. 2021
+      </div>
+      <div class="timeline-title">
+	      Undergraduate research assistant @ NUS
+      </div>
+      <div class="timeline-desc">
+        <a href="https://adacomp.comp.nus.edu.sg/"><b>Adaptive Computing Lab (AdaComp)</b></a><br>
+        <b>Advisor:</b> <a href="https://www.comp.nus.edu.sg/~dyhsu/">Prof. David Hsu</a><br>
+        Work on the control and system architecture for autonomous long-horizon visual navigation.
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+
+<div class="wrapper">
+  <div id="teaching" class="bio">
+    <h1 class="md-heading text-left">
+      <i class="fa fa-tasks" aria-hidden="true"></i>
+      Teaching
+    </h1>
+    <b>Teaching Assistant</b>
+    <ul>
+      <li>CS3244: Machine Learning, Fall 2021, NUS</li>
+      <li>CS2040: Data Structures and Algorithms, Fall 2020, NUS</li>
+    </ul>
+  </div>
+</div>
+
+<!--
+<div class="wrapper">
+  <div id="misc" class="bio">
+    <div class="bio-body" style="overflow:hidden;">
+      <h1 class="md-heading text-left">
+        <i class="fa fa-id-card" aria-hidden="true"></i>
+        Miscellaneous
+      </h1>  
+      <p>
+      I am a sports enthusiast interested in badminton🏸, hiking🥾, basketball🏀 and so much more.<br><br>
+      I was an athlete with 5 years of semi-professional training in Xiamen Professional Badminton Team, a renowned team that has produced 2 Olympic Champions and numerous world champions🏅.
+      </p>
+      <table>
+        <tbody><tr>
+          <td width="30%" valign="middle"><p><a href="https://www.bilibili.com/video/BV1ao4y1t7LJ/?spm_id_from=333.999.0.0&vd_source=24a1de585eee62ca4067d60b85fe0d92" target="_blank">
+            <img src="./images/self-portrait/badminton.png" width="300" alt="LGM" style="border-style: none" align="top">
+          </a></p></td>
+          <td width="50%" valign="middle"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.25;">
+              <ul>
+                <li><b>Chinese National First-Class Athlete</b> 
+                  <ul>
+                    <li>Highest lifelong honor for semi-professional athletes</li>	
+                  </ul>
+                </li>
+                <li>National 8th place in Badminton Men's Singles</li>
+                <li>Zhejiang Provincial 🥇🥈 &nbsp; <a href="https://www.bilibili.com/video/BV1ao4y1t7LJ/?spm_id_from=333.999.0.0&vd_source=24a1de585eee62ca4067d60b85fe0d92"> <img src="https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=$.data.stat.view&url=https://api.bilibili.com/x/web-interface/view?bvid=BV1kK4y1P7FJ" alt="bilibili"> <img src="https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=$.data.stat.view&url=https://api.bilibili.com/x/web-interface/view?bvid=BV1ao4y1t7LJ" alt="bilibili"></a></li>
+                <li>Fujian Provincial 🥈🥈🥉🥉</li>
+                <li>Xiamen Municipal 🥇🥇🥇🥇🥇🥇🥇</li>
+              </ul>
+          </p></td>
+        </tr></tbody>
+      </table>
+      
+      <p id="readMoreDiv3"><a href="javascript:void(0);" onclick="ShowHide('HiddenDiv3', 'readMoreDiv3')" class="read-more-link">show more</a></p>
+      <div class="mid" id="HiddenDiv3" style="display: none;">	
+        <table>
+          <tbody><tr>
+            <td width="100%">
+              <p style="margin-top: 3px; margin-bottom: 3px; line-height: 1.25;">
+                💡 I am interested in tech-empowered entrepreneurship and I was selected for a distinguished minor program in innovation and entrepreneurship with honors.
+                <br><br>
+                🎤 To promote information technology, I've been an invited speaker on national TV and provincial radio, as well as the host of a Turing Seminar with Monty, the admirable creator of MySQL.
+                <br><br>
+                💖 I have a passion for philanthropy and participated in several charity events. I am humbled to receive ZJU's highest recognition for my efforts.
+            </p></td>
+          </tr></tbody>
+        </table>
+      </div>
+    
+    <table style="width:16%;max-width:400px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+      <tbody><tr>
+        <td style="width:100%; vertical-align:middle; text-align:center;"><p>
+          <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=O8suamHxmsJ0Q9xPWGTZ-axPrNLubvMXcLlaLEJQwzk"></script>
+        </a></p></td>
+      </tr></tbody>
+    </table>
+    </div>
+  </div>
+</div>
+-->
+
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Email:</li>
+          <li><a href="mailto:">zhuoran.li [at] u [dot] nus [dot] edu</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+          <a href="https://scholar.google.com/citations?user=NcQERBIAAAAJ&hl=en" class="icon-button github">
+          <i class="ai ai-google-scholar-square icon-github"></i>
+            <span></span>
+          </a>
+
+          <a href="https://github.com/DavidLzr" class="icon-button github">
+            <i class="fa fa-github icon-github"></i>
+            <span></span>
+          </a>
+          
+          <!--
+            <a href="https://www.linkedin.com/in/zeqing-yuan-bb1839268/" class="icon-button linkedin">
+            <i class="fa fa-linkedin icon-linkedin"></i>
+            <span></span>
+          </a>
+          -->
+
+          <a href="https://twitter.com/david_zhuoranli" class="icon-button twitter">
+            <i class="fa fa-twitter icon-twitter"></i>
+            <span></span>
+          </a>
+
+          <a href="files/zhuoran_li_cv.pdf" class="icon-button github">
+            <i class="ai ai-cv icon-github"></i>
+            <span></span>
+          </a>
+      </div>
+	<div class="footer-col footer-col-3">
+    <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fleoyuan.site&count_bg=%2350A7E3&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=false"/></a>
+		<p class="text">The style of this website is borrowed from <a href='http://hexianghu.com/'>Hexiang Hu's</a>.</p>
+	</div>
+  </div>
+  </div>
+
+</footer>
+    <div class="back-to-top">Top</div>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+    
+        }
+    });
+    jQuery('.back-to-top').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+    })
+});
+</script>
+</body>
+
+<!--
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60071442-1', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
+
+<!--<script src="custom-pub.js"></script>-->
+</html>
