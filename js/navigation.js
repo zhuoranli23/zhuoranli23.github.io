@@ -6,7 +6,6 @@
 
   if (!nav || !list || !track || sections.length === 0) return;
 
-  const compactLayout = window.matchMedia("(max-width: 1170px)");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const links = sections.map(function (section, index) {
     const heading = section.querySelector(".section-title");
@@ -37,14 +36,12 @@
   }
 
   function positionIndicator(item) {
-    nav.style.setProperty("--indicator-y", item.offsetTop + "px");
-    nav.style.setProperty("--indicator-height", item.offsetHeight + "px");
     nav.style.setProperty("--indicator-x", item.offsetLeft + "px");
     nav.style.setProperty("--indicator-width", item.offsetWidth + "px");
   }
 
-  function revealCompactLink(item) {
-    if (!compactLayout.matches) return;
+  function revealActiveLink(item) {
+    if (track.scrollWidth <= track.clientWidth) return;
 
     const targetLeft = item.offsetLeft - (track.clientWidth - item.offsetWidth) / 2;
     track.scrollTo({
@@ -67,14 +64,14 @@
     });
 
     positionIndicator(entry.item);
-    revealCompactLink(entry.item);
+    revealActiveLink(entry.item);
   }
 
   function syncActiveSection() {
     const ordered = links.slice().sort(function (a, b) {
       return documentTop(a.section) - documentTop(b.section);
     });
-    const navHeight = compactLayout.matches ? nav.getBoundingClientRect().height : 0;
+    const navHeight = nav.getBoundingClientRect().height;
     const anchorOffset = parseFloat(window.getComputedStyle(ordered[0].section).scrollMarginTop) || 0;
     const probe = window.scrollY + Math.max(navHeight + 28, anchorOffset + 2);
     const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 8;
@@ -145,7 +142,6 @@
   window.addEventListener("hashchange", scheduleSync);
   window.addEventListener("pageshow", scheduleSync);
   window.addEventListener("popstate", scheduleSync);
-  compactLayout.addEventListener("change", scheduleSync);
   document.addEventListener("toggle", scheduleSync, true);
   if (window.ResizeObserver) {
     const observer = new ResizeObserver(scheduleSync);
