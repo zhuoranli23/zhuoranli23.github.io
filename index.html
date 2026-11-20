@@ -1,770 +1,205 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFR2GFKT75"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-RFR2GFKT75');
-  </script> -->
-  <!-- Google Tag Manager -->
-  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  })(window,document,'script','dataLayer','GTM-NC38VTD');</script> -->
-  <!-- End Google Tag Manager -->
-
+<html lang="en">
+<head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta http-equiv="refresh" content="0; URL=https://cs.stanford.edu/~leoyuan/"> -->
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	  
-	<!-- <meta name="google-site-verification" content="u_--0s_Uw50r4zCgRrzltkmFhNCduYOJwPGlKVTuNJU" /> -->
-
-  <title>Zhuoran Li</title>
-  <meta name="description" lang="en" content="This is an academic website for Zhuoran Li">
-  <meta name="keywords" lang="en" content="Zhuoran Li" />
-  
-
-  <link rel="shortcut icon" href="images/icon/z.jpg">
+  <meta name="color-scheme" content="light">
+  <meta name="author" content="Zhuoran Li">
+  <meta name="description" content="Zhuoran Li is an MSCS student at Stanford University studying how robots learn world models from human demonstrations and use them to plan.">
+  <title>Zhuoran Li | Stanford University</title>
+  <link rel="icon" href="images/icon/z.jpg">
   <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <!-- <link rel="canonical" href="https://cs.stanford.edu/~leoyuan/"> -->
-  <!-- <link rel="alternate" type="application/rss+xml" title="Zeqing (Leo) Yuan" href="https://LeoYuan0111.github.io/feed.xml" /> -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="css/academicons.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-
-
-  <script src="js/jquery-2.1.3.min.js"> </script>
-
-  <!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-</script>
-<![endif]-->
-
-  <script type="text/javascript">
-    function ShowHide(divId, linkDivId) {
-        if(document.getElementById(divId).style.display == 'none') {
-            document.getElementById(divId).style.display='block';
-            document.getElementById(linkDivId).style.display='none'; // Hide the "read more" link
-        }
-        else {
-            document.getElementById(divId).style.display = 'none';
-        }
-    }
-  </script>
-
-  <style>
-    /* 为所有列表项设置样式 */
-    li.indented {
-        position: relative;
-        padding-left: 120px; /* 这是对齐效果的关键，可以根据实际内容调整这个值 */
-    }
-
-    li.indented::before {
-        content: attr(data-date);
-        position: absolute;
-        left: 0;
-        top: 0;
-        white-space: nowrap;
-    }
-  </style>
-  
+  <script src="js/navigation.js" defer></script>
+  <script src="js/publications.js" defer></script>
 </head>
-
-
 <body>
-
-    <!-- Google Tag Manager (noscript) -->
-<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC38VTD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-<!-- End Google Tag Manager (noscript) -->
-
-    <header class="site-header">
-
-  <div class="wrapper">
-<nav class="site-nav">
-  <a href="#" class="menu-icon">
-    <svg viewBox="0 0 18 15">
-      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-      <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-      <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-    </svg>
-  </a>
-
-  <div class="trigger">
-    <a class="page-link" href="#bio"><b>Biography</b></a>
-    <a class="page-link" href="#publications"><b>Publications</b></a>
-    <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
-    <a class="page-link" href="#timeline"><b>Experiences</b></a>
-    <a class="page-link" href="#teaching"><b>Teaching</b></a>
-    <a class="page-link" href="#misc"><b>Misc</b></a>
-    <!-- <a class="page-link" href="files/CV.pdf"><b>CV</b></a> -->
-    <!--<a class="page-link" href="#otherprojects">Projects</a>-->
-    <!-- Button for Posts -->
-  </div>
-</nav>
-  </div>
-</header>
-
-  <div id="profile-cover" class="cover shallow-bg img-responsive"> 
-    <div id="profile-namecard" class="profile-wrapper wrapper-light">
-      <div id="my-pic" class="profile-col profile-col-1">
-        <img id="profile-avatar" src="./images/self-portrait/me.jpg" alt="Me" class="circle-img border-dark"-/>
+  <a class="skip-link" href="#about">Skip to main content</a>
+  <nav class="section-nav" aria-label="Page sections">
+    <div class="section-nav__inner">
+      <a class="section-nav__label" href="#about">Index</a>
+      <div class="section-nav__track">
+        <span class="section-nav__indicator" aria-hidden="true"></span>
+        <ol class="section-nav__list" id="section-nav-list">
+          <li class="section-nav__item"><a class="section-nav__link" href="#about">About</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#news">News</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#publications">Publications</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#education">Education</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#timeline">Experience</a></li>
+          <li class="section-nav__item"><a class="section-nav__link" href="#teaching">Teaching</a></li>
+        </ol>
       </div>
-      <div id="my-contact" class="profile-col profile-col-2">
-        <div id="my-name" class="text-grey-dark">
-          Zhuoran Li<br>
-        </div>
-        <div id="my-title" class="text-grey">
-          Robotics Researcher
-        </div>
-        <div id="my-email" class="text-grey-light">
-          zhuoran.li [at] u [dot] nus [dot] edu
-        </div>
-
-        <div class="social-media">
-          <a href="https://scholar.google.com/citations?user=NcQERBIAAAAJ&hl=en" class="icon-button github">
-          <i class="ai ai-google-scholar-square icon-github"></i>
-            <span></span>
-          </a>
-
-          <!-- <a href="https://github.com/zhuoranli23" class="icon-button github">
-            <i class="fa fa-github icon-github"></i>
-            <span></span>
-          </a> -->
-          
-          <a href="https://twitter.com/david_zhuoranli" class="icon-button twitter">
-            <i class="fa fa-twitter icon-twitter"></i>
-            <span></span>
-          </a>
-
-          <a href="https://www.linkedin.com/in/zhuoran-li-david/" class="icon-button linkedin">
-            <i class="fa fa-linkedin icon-linkedin"></i>
-            <span></span>
-          </a>
-
-          <a href="files/Zhuoran Li - CV.pdf" class="icon-button github">
-            <i class="ai ai-cv icon-github"></i>
-            <span></span>
-          </a>
-        </div>
-      </div>
-
-      <!--
-      <div id="my-desc" class="profile-col profile-col-2 hide">
-        <div id="my-desc-title">
-          Another me.
-        </div>
-        <div id="my-desc-content">
-          I am a sports enthusiast and badminton provincial champion🥇<br>
-          I also enjoy hiking🥾, movies, music and so much more<br>
-          Feel free to shoot me an email :)
-        </div>
-      </div>
-      -->
     </div>
-  </div>
-  <!-- <script type="text/javascript">
-    function deepFeature()
-    {
-      $('#profile-avatar').attr('src', 'images/self-portrait/deep-me.jpg');
-      $('#profile-avatar').removeClass('border-dark');
-      $('#profile-avatar').addClass('border-bright');
+  </nav>
 
-      $('#profile-cover').removeClass('shallow-bg');
-      $('#profile-cover').addClass('deep-bg');
-      
-      $('#profile-namecard').removeClass('wrapper-light');
-      $('#profile-namecard').addClass('wrapper-dark');
-      
-      $('#my-desc').removeClass('hide');
-      $('#my-contact').addClass('hide');    
-      // console.log('Move in now...');
-    }
+  <main class="page-shell">
+    <section id="about" class="page-section profile" data-nav-section data-nav-label="About" tabindex="-1">
+      <div class="profile-copy" id="bio">
+        <h1 class="name">Zhuoran Li</h1>
+        <p class="profile-intro">Hi, I’m Zhuoran (Ran). I’m an MSCS student at <a href="https://www.stanford.edu/">Stanford University</a>. I received my B.Sc. in Data Science and Analytics with Highest Distinction from the <a href="https://nus.edu.sg/">National University of Singapore</a>.</p>
+        <p class="profile-intro">I am broadly interested in <strong>robot learning</strong>, <strong>planning</strong>, and <strong>agentic robotics</strong>. My goal is to build general-purpose robots that can carry out complex, long-horizon tasks and adapt their plans when conditions change. I’d like these robots to take on work ranging from routine household chores to hazardous jobs on the factory floor. I favor simple methods that scale with data and compute.</p>
+        <p class="profile-intro">Previously, I was a research assistant working with <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a>, <a href="https://www.comp.nus.edu.sg/~dyhsu/">Prof. David Hsu</a>, and <a href="https://www.weiyuliu.com/">Prof. Weiyu Liu</a> on how large language models and vision-language models can reason and plan with abstract world models learned from unlabelled human videos. As an undergraduate, I worked with <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a> and <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a> on dynamic 3D scene representations for robotic manipulation.</p>
+        <div class="profile-links" aria-label="Contact and profiles">
+          <a class="profile-link" href="mailto:davidzrl@stanford.edu"><img src="assets/icons/email.png" alt="" width="22" height="22">Email</a>
+          <a class="profile-link" href="https://scholar.google.com/citations?user=NcQERBIAAAAJ&amp;hl=en"><img src="assets/icons/google_scholar.png" alt="" width="22" height="22">Google Scholar</a>
+          <a class="profile-link" href="files/Zhuoran%20Li%20-%20CV.pdf" aria-label="CV (PDF)"><img src="images/icon/cv-symbol.png" alt="" width="22" height="22">CV</a>
+        </div>
+      </div>
+      <figure class="profile-portrait">
+        <img class="avatar" src="images/self-portrait/me.jpg" alt="Zhuoran Li" width="1076" height="1076" fetchpriority="high">
+      </figure>
+    </section>
 
-    function shallowFeature()
-    {
-      $('#profile-avatar').attr('src', 'images/self-portrait/me.jpg');
-      $('#profile-avatar').removeClass('border-bright');
-      $('#profile-avatar').addClass('border-dark');
-
-      $('#profile-cover').removeClass('deep-bg');
-      $('#profile-cover').addClass('shallow-bg');
-      
-      $('#profile-namecard').removeClass('wrapper-dark');
-      $('#profile-namecard').addClass('wrapper-light');
-      
-      $('#my-contact').removeClass('hide');
-      $('#my-desc').addClass('hide');
-      // console.log('Move out now...');
-    }
-
-    $(function() { 
-      $('#my-pic').hover(deepFeature, shallowFeature);
-    })
-
-  </script> -->
-
-<div class="page-content">
-<div class="wrapper">
-<div id="bio" class="bio">
-
-  <h1 class="md-heading text-left">
-    <i class="fa fa-id-card" aria-hidden="true"></i>
-    About
-  </h1>
-  <div class="bio-body" style="overflow:hidden;">
-    <p>
-      Hello, my name is Zhuoran Li and your can call me Ran for short:) I am always driven by interesting and challenging problems (not specific methods) about developing generalist robots that learn and plan to help people.
-      I am currently a research assistant working with <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a>, <a href="https://www.comp.nus.edu.sg/~dyhsu/">Prof. David Hsu</a>, and <a href="https://www.weiyuliu.com/">Dr. Weiyu Liu</a>, working on learning and reasoning with the structured representation of world knowledge to achieve robust generalization for robot planning.
-      <br><br>
-      Previously, I received my Bachelor of Science with <a href="files/Zhuoran Li - Degree.pdf">the highest distinction</a> from the <a href="https://nus.edu.sg/">National University of Singapore (NUS)</a>.
-      <!-- <a href="https://www.stat.nus.edu.sg/">Department of Statistics and Data Science</a>.  -->
-      I had a wonderful research experience at the <a href="https://svl.stanford.edu/">Stanford Vision and Learning Lab (SVL)</a>, working on designing ideal scene representations for robotic manipulationby leveraging foundation models, as an undergraduate visiting research intern, where I was grateful to be advised by 
-      <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a> and <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a>. 
-      <!-- After that, I had also been a research assistant at the <a href="https://yunzhuli.github.io/#Group">Robotic Perception, Interaction, and Learning Lab (RoboPIL)</a> working with Prof. <a href="https://yunzhuli.github.io/">Yunzhu Li</a> on action-conditioned scene graph building via interactive exploration for robotic manipulation, incorporating the large multimodal model (LMM). -->
-      <br><br>
-      At the intersection of robot planning and machine learning, my long-term research goal is to build generalist, human-centered robots that can effectively perceive, model, and interact with the real world, executing long-horizon tasks from simple language commands like "make the coffee". I pursue robust generalization through a structured representation of world knowledge. To build this representation, robots should leverage the rich knowledge embedded in human language and everyday human videos and ground it through interactions with environments, connecting abstract knowledge to sensorimotor capabilities. Currently, I develop learn-to-plan frameworks that automatically learn accurate planning abstractions—state abstractions (predicates) and action abstractions (skills)—from everyday human videos for robot planning. These structures make learning more data-efficient, more compositionally generalizable, and accelerate inference and planning. Additionally, I design novel task planners to reason and plan with these learned abstractions more effectively. Before formalizing this long-term research direction, I worked on designing scene representations for robotic manipulation. That experience gives me a strong foundation in robotic perception and manipulation.
-      <!-- My research lies at the intersection of <b>automated planning</b> and <b>machine learning</b>. My 
-      Specifically, I focus on <b>Embodied AI</b> and aim to develop novel algorithms that enable robots to better perceive, understand, and learn from multimodal information in their interactions with the physical world, and autonomously acquire the perception and manipulation skills necessary to execute complex tasks, ultimately achieving human-level performance in various scenarios, ranging from industrial applications to daily life assistance. -->
-      <!-- My goal is to construct intelligent systems that can comprehend, generate, and interact with our 3D world.  -->
-      <!-- Previously I have also done engaging projects on HCI. -->
-      <!-- Beyond that, I am deeply intrigued by exploring the fundamental principles that underpin human cognitive processes. -->
-      <!-- <br><br> -->
-      <!-- <b>I am actively looking for MS/PhD positions starting in Fall 2025! I would love to chat more if you think I might be a good fit for your lab :)</b> -->
-      <!-- <br><br> -->
-    </p>
-    
-    <!-- <div style="width: 50%; float:left">
-			<h3>
-		    <i class="fa fa-star" aria-hidden="true"></i>
-		    <strong>Research Interests</strong>
-			</h3>
-      <ul>
-        <li>Robotics and Embodied AI</li>
-        <li>Robotic Manipulation</li>
-        <li>Foundation Models</li>
-        <li>Multi-Modal Perception</li>
-        <li>Physical Scene Understanding</li>
-        <li>Intelligent Systems</li>
+    <section id="news" class="page-section news-section" data-nav-section tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">News</h2></header>
+      <ul class="news-list">
+        <li><time datetime="2026-09">Sep 2026</time><p>I started my master’s in Computer Science at Stanford.</p></li>
       </ul>
-    </div> -->
+    </section>
 
-    <!-- <div style="width: 50%; float:right">
-			<h3>
-				<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-				<strong>Education</strong>
-			</h3>
-			<b>National University of Singapore</b><br>
-			<ul>
-        <li>B.S.(Honors) in Data Science and Analytics</li>
-        <li>Minoring in Computer Science</li>
-        <li>GPA: 4.74 / 5.0</li>
-        <li>1st Class Honors, Highest Distinction (expected, upon graduation)</li>
-			</ul>
-    </div> -->
-  
-  </div>
-</div>
-
-
-<!--
-<div id="news" class="bio">
-  <h1 class="md-heading text-left">
-    <i class="fa fa-tasks" aria-hidden="true"></i>
-    News
-  </h1>  
-  <ul>
-    <li class="indented" data-date="[Oct, 2023]"> <a href="http://www.cs.zju.edu.cn/turingclass_en/2023/1023/c51325a2815951/page.htm">Awarded the highest honor at Zhejiang University, Chu Kochen Presidential Scholarship</a> (12/~24,000)</li>
-    <li class="indented" data-date="[Oct, 2023]"> Awarded my 3rd National Scholarship (Top 0.2%)</li>
-    <li class="indented" data-date="[Aug, 2023]"> One paper submitted</li>
-    <li class="indented" data-date="[Jul, 2023]"> One patent accepted</li>
-    <li class="indented" data-date="[Dec, 2022]"> Awarded SenseTime Scholarship</a></li>
-    <li class="indented" data-date="[Oct, 2022]"> One work receives People's Choice Award in ACM MobileHCI</li>
-    <li class="indented" data-date="[Jun, 2021]"> One paper accepted to IEEE VIS and TVCG</li>
-  </ul>
-</div>
--->
-
-
-<div id="publications" class="publications">
-  <h1 class="md-heading text-left">
-    <i class="fa fa-file" aria-hidden="true"></i>
-    Publications
-  </h1>
-  <div class="equal-contribution-notice">
-    <font style="font-size: 12pt;">
-      (* indicates equal contribution)
-    </font>
-  </div>
-  <div class="pub-list">
-    
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="publications/d3fields.gif">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          D<sup>3</sup>Fields: Dynamic 3D Descriptor Fields for Zero-Shot Generalizable Rearrangement
-        </div>
-        <!--
-          <div class="desc">
-          TL;DR Recognizing high-level techniques for sports video analysis by leveraging sparse visual information and contextual domain knowledge
-        </div>
-        -->
-        <div class="authors">
-          <font style="font-size: 11pt;">
-            <a class="author" href="https://wangyixuan12.github.io/">Yixuan Wang*</a>,
-            <a class="author" href="https://robo-alex.github.io/">Mingtong Zhang*</a>,
-            <a class="author" href=""><b>Zhuoran Li*</b></a>,
-            <a class="author" href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>,
-            <a class="author" href="https://jiajunwu.com/">Jiajun Wu</a>,
-            <a class="author" href="https://profiles.stanford.edu/fei-fei-li/">Li Fei-Fei</a>,
-            <a class="author" href="https://yunzhuli.github.io/">Yunzhu Li</a><br>
-          </font>
-          <font style="font-size: 11pt;">
-            <i>The Conference on Robot Learning (<b>CoRL</b>)</i>, 2024<br>
-            <!-- <p style="color: red;">This text is red.</p> -->
-            <span style="color: red;"><b>Oral Presentation</b></span><br>
-          </font>
-        </div>
-        <!--
-        <div class="publish">
-          <span class="publisher">Under Review</span>
-          <span class="place"></span>
-        </div>
-        -->
-        <!-- <div class="tags">
-          [<a class="tag" href="https://robopil.github.io/d3fields/"><strong>Project Page</strong></a>]
-          [<a class="tag" href="https://robopil.github.io/d3fields/d3fields.pdf"><strong>Paper</strong></a>]
-          [<a class="tag" href="https://github.com/WangYixuan12/d3fields"><strong>Code</strong></a>]
-          [<a class="tag" href="https://youtu.be/yNkIOwAO3GA"><strong>Video</strong></a>]
-        </div> -->
-        <font style="font-size: 11pt;">
-          [<a href="https://robopil.github.io/d3fields/">Project Page</a>] [<a href="https://openreview.net/pdf?id=Uaaj4MaVIQ">Paper</a>] [<a href="https://github.com/WangYixuan12/d3fields">Code</a>]
-        </font>
-        <!--
-          <div class="desc">
-          By leveraging foundation models, D$^3$Fields is an ideal scene representation for Embodied AI, which is 3D, dynamic, and semantic. It supports goal specification using 2D images with varied styles, contexts, and instances
-          and zero-shot generalizable manipulation applicable to a broad spectrum of household tasks.
-        </div>
-        -->
-      </div>
-    </div>
-
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="publications/roboexp.jpg">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation
-        </div>
-        <div class="authors">
-          <font style="font-size: 11pt;">
-            <a class="author" href="https://jianghanxiao.github.io/">Hanxiao Jiang</a>,
-            <a class="author" href="https://binghao-huang.github.io/">Binghao Huang</a>,
-            <a class="author" href="https://warshallrho.github.io/">Ruihai Wu</a>,
-            <a class="author" href=""><b>Zhuoran Li</b></a>,
-            <a class="author" href="https://www.gargshubham.com/">Shubham Garg</a>,
-            <a class="author" href="https://www.amazon.science/author/hooshang-nayyeri">Hooshang Nayyeri</a>,
-            <a class="author" href="https://shenlong.web.illinois.edu/">Shenlong Wang</a>,
-            <a class="author" href="https://yunzhuli.github.io/">Yunzhu Li</a><br>
-          </font>
-          <font style="font-size: 11pt;">
-            <i>The Conference on Robot Learning (<b>CoRL</b>)</i>, 2024<br>
-            <!-- <p style="color: red;">This text is red.</p> -->
-            <span style="color: red;"><b>Best Paper Nomination</b></span> at <b>ICRA 2024</b> Workshop on Vision-Language Models for Manipulation <font style="font-size: 9pt;">[<a href="https://vlmnm-workshop.github.io/">Link</a>]</font><br>
-            <span style="color: red;"><b>Oral Presentation</b></span> at <b>CVPR 2024</b> Workshop on Vision and Language for Autonomous Driving and Robotics <font style="font-size: 9pt;">[<a href="https://vision-language-adr.github.io/">Link</a>]</font><br>
-          </font>
-        </div>
-        <font style="font-size: 11pt;">
-          [<a href="https://jianghanxiao.github.io/roboexp-web/">Project Page</a>] [<a href="https://jianghanxiao.github.io/roboexp-web/roboexp.pdf">Paper</a>] [<a href="https://github.com/Jianghanxiao/RoboEXP">Code</a>]
-        </font>
-        <!-- <div class="tags">
-          [<a class="tag" href="https://jianghanxiao.github.io/roboexp-web/">Project Page</a>]
-          [<a class="tag" href="https://jianghanxiao.github.io/roboexp-web/roboexp.pdf">Paper</a>]
-          [<a class="tag" href="https://github.com/Jianghanxiao/RoboEXP">Code</a>]
-          [<a class="tag" href="https://www.youtube.com/watch?v=xZ1gfLRXSOE">Video</a>]
-        </div> -->
-      </div>
-    </div>
-
-    <!--
-    <div class="pub">
-      <div class="pub-left">
-        <img class="intro-img frame" src="publications/TIVEE.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">
-          TIVEE: Visual Exploration and Explanation of Badminton Tactics in Immersive Visualizations
-        </div>
-        <div class="desc">
-          TLDR; 3D visualization and VR interaction for immersive sports analysis
-        </div>
-        <div class="authors">
-          <font style="font-size: 11pt;">
-            <a class="author" href="https://sheaton1.github.io/"> Xiangtong Chu</a>,
-            <a class="author" href="https://ssxiexiao.github.io/"> Xiao Xie</a>,
-            <a class="author" href="">Shuainan Ye</a>,
-            <a class="author" href="">Haolin Lu</a>,
-            <a class="author" href="">Hongguang Xiao</a>,
-            <a class="author" href="https://leoyuan.site"><b>Zeqing Yuan</b></a>,
-            <a class="author" href="https://chenzhutian.org/">Zhutian Chen</a>,
-            <a class="author" href="http://www.ycwu.org/">Yingcai Wu</a>
-          </font>
-          </span>
-        </div>
-        <div class="publish">
-          <span class="publisher">IEEE TVCG (VIS 2021)</span>
-          <span class="place"></span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="https://zjuidg.org/source/projects/TIVEE/TIVEE.pdf"><strong>Paper</strong></a>]
-          [<a class="tag" href="https://ieeexplore.ieee.org/abstract/document/9557225"><strong>www</strong></a>]
-          [<a class="tag" href="https://www.youtube.com/watch?v=4j5CL5HamQQ"><strong>Video</strong></a>]
-        </div>
-      </div>
-    </div>
-        -->
-
-  </div>
-</div>
-</div>
-
-
-<div class="wrapper">
-  <div id="awards" class="bio">
-    <h1 class="md-heading text-left">
-      <i class="fa fa-tasks" aria-hidden="true"></i>
-      Selected Honors & Awards 
-    </h1>
-    <ul>
-      <li><b>Dean's List</b>, NUS</li>
-      <li><b>Certificate of Oustanding Performance & Top Students</b> in CS4243 Computer Vision and Pattern Recognition (<b>graduate level course</b>), NUS</li>
-      <li><b>Certificate of Best Project Award</b> in CS4246/CS5446 AI Planning and Decision Making (<b>graduate level course</b>), NUS</li>
-      <li><b>The Science & Technology Undergraduate Scholarship</b> (an undergraduate <b>full scholarship</b> offered to support outstanding students), NUS & Singapore Ministry of Education</li>
-    </ul>
-  </div>
-</div>
-
-<div class="wrapper">
-<div id="timeline" class="timeline-brief">
-  <h1 class="md-heading text-left">
-    <i class="fa fa-tasks" aria-hidden="true"></i>
-    Experiences
-  </h1>
-
-  <div class="timeline-body">
-    <!--
-      <div class="timeline-item">
-      <div class="timeline-date">
-        <img class="social-icon" src="images/icon/stanford.png"/>
-        <img class="social-icon" src="images/icon/zju.png"/>
-        In-progress Projects: ...
-      </div>
-      <div class="timeline-host">
-      </div>
-    </div>
-    -->
-    
-    <!-- <div class="timeline-item">
-      <div class="timeline-date">
-        <img class="social-icon" src="images/icon/stanford.png"/>
-        2023 Jun. - Present
-      </div>
-      <div class="timeline-title">
-        Visiting Research Student @ Stanford
-      </div>
-      <div class="timeline-desc">
-        <a href="https://svl.stanford.edu/">Stanford Vision & Learning Lab</a><br>
-        Work on zero-shot image-to-3D scene layout generation
-      </div>
-      <div class="timeline-host">
-      </div>
-    </div> -->
-    
-    <!-- <div class="timeline-item">
-      <div class="timeline-date">
-        <img class="social-icon" src="images/icon/zju.png"/>
-        2022 Jul. - Present
-      </div>
-      <div class="timeline-title">
-        Undergraduate Researcher @ ZJU
-      </div>
-      <div class="timeline-desc">
-        Final Year Project on visual generative models
-      </div>
-      <div class="timeline-host">
-        Supervisor: <a href='https://cshen.github.io/'>Prof. Chunhua Shen</a><br>
-      </div>
-      <div class="timeline-desc">
-        Project on Large Language Models
-      </div>
-      <div class="timeline-host">
-        Supervisor: <a href="http://jakezhao.net/">Prof. Jake Zhao</a>
-      </div>
-    </div> -->
-
-    <div class="timeline-item">
-      <div class="timeline-date">
-        <img class="social-icon" src="images/icon/stanford_nus.png"/>
-        May. 2025 - Present
-      </div>
-      <div class="timeline-title">
-	      Research Assistant @ Stanford & NUS
-      </div>
-      <div class="timeline-desc">
-        <!-- <a href="https://www.comp.nus.edu.sg/~lowkh/"><b>Group of Learning and Optimization Working in AI (GLOW.AI)</b></a><br> -->
-        <b>Advisor:</b> <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a> and <a href="https://www.comp.nus.edu.sg/~dyhsu/">Prof. David Hsu</a><br>
-        Working on automatically learning accurate planning abstractions—state abstractions (predicates) and action abstractions (skills)—from everyday human videos for robot planning, using neural-symbolic methods and foundation models. Developing novel task planners to reason and plan with these learned abstractions more effectively.
-      </div>
-    </div>
-    
-    <div class="timeline-item">
-      <div class="timeline-date">
-        <img class="social-icon" src="images/icon/NUS.jpg"/>
-        Sep. 2023 - May. 2024
-      </div>
-      <div class="timeline-title">
-	      Undergraduate Research Assistant @ NUS
-      </div>
-      <div class="timeline-desc">
-        <a href="https://www.comp.nus.edu.sg/~lowkh/"><b>Group of Learning and Optimization Working in AI (GLOW.AI)</b></a><br>
-        <b>Advisor:</b> <a href="https://www.comp.nus.edu.sg/cs/people/lowkh/">Prof. Bryan Low</a><br>
-        Worked on my undergraduate honors thesis about leveraging large multimodal models (LMMs) for decision making and planning under uncertainty, with applications in autonomous driving and robotics.
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">
-        <img class="social-icon" src="images/icon/uiuc.png"/>
-        Oct. 2023 - Feb. 2024
-      </div>
-      <div class="timeline-title">
-	      Undergraduate Research Assistant @ UIUC
-      </div>
-      <div class="timeline-desc">
-        <a href="https://yunzhuli.github.io/#Group"><b>Robotic Perception, Interaction, and Learning Lab (RoboPIL)</b></a><br>
-        <b>Advisor:</b> <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a><br>
-        Worked on action-conditioned scene graph building via interactive exploration for robotic manipulation, incorporating the large multimodal model (LMM).
-      </div>
-      <!--
-        <div class="timeline-host">
-        Supervisor: <a href="http://www.ycwu.org/">Prof. Yingcai Wu</a>
-      </div>
-      -->
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">
-        <img class="social-icon" src="images/icon/stanford.png"/>
-        Apr. 2023 - Sep. 2023
-      </div>
-      <div class="timeline-title">
-	      Undergraduate Visiting Research Intern @ Stanford
-      </div>
-      <div class="timeline-desc">
-        <a href="https://svl.stanford.edu/"><b>Stanford Vision and Learning Lab (SVL)</b></a><br>
-        <b>Advisor:</b> <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a> and <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a><br>
-        Worked on designing an ideal scene representation for embodied AI by leveraging foundation models, which is 3D, dynamic, and semantic. 
-        <!--
-           Our ideal representation, D$^3$Fields, supports goal specification using 2D images with varied styles, contexts, and instances 
-          and <b>zero-shot</b> generalizable manipulation applicable to a broad spectrum of household tasks.<br>
-          Also work on other Embodied AI related projects.
-        -->
-      </div>
-      <!--
-        <div class="timeline-host">
-        Supervisor: <a href="http://www.ycwu.org/">Prof. Yingcai Wu</a>
-      </div>
-      -->
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-date">
-        <img class="social-icon" src="images/icon/NUS.jpg"/>
-        Jan. 2021 - Aug. 2021
-      </div>
-      <div class="timeline-title">
-	      Undergraduate Research Assistant @ NUS
-      </div>
-      <div class="timeline-desc">
-        <a href="https://adacomp.comp.nus.edu.sg/"><b>Adaptive Computing Lab (AdaComp)</b></a><br>
-        <b>Advisor:</b> <a href="https://www.comp.nus.edu.sg/~dyhsu/">Prof. David Hsu</a><br>
-        Worked on designing the control and system architecture for autonomous long-horizon visual navigation.
-      </div>
-    </div>
-</div>
-</div>
-</div>
-
-
-
-<div class="wrapper">
-  <div id="teaching" class="bio">
-    <h1 class="md-heading text-left">
-      <i class="fa fa-tasks" aria-hidden="true"></i>
-      Academic Service
-    </h1>
-    <b>Teaching Assistant</b>
-    <ul>
-      <li>CS3244: Machine Learning, Fall 2021, NUS</li>
-      <li>CS2040: Data Structures and Algorithms, Fall 2020, NUS</li>
-    </ul>
-  </div>
-</div>
-
-<!--
-<div class="wrapper">
-  <div id="misc" class="bio">
-    <div class="bio-body" style="overflow:hidden;">
-      <h1 class="md-heading text-left">
-        <i class="fa fa-id-card" aria-hidden="true"></i>
-        Miscellaneous
-      </h1>  
-      <p>
-      I am a sports enthusiast interested in badminton🏸, hiking🥾, basketball🏀 and so much more.<br><br>
-      I was an athlete with 5 years of semi-professional training in Xiamen Professional Badminton Team, a renowned team that has produced 2 Olympic Champions and numerous world champions🏅.
-      </p>
-      <table>
-        <tbody><tr>
-          <td width="30%" valign="middle"><p><a href="https://www.bilibili.com/video/BV1ao4y1t7LJ/?spm_id_from=333.999.0.0&vd_source=24a1de585eee62ca4067d60b85fe0d92" target="_blank">
-            <img src="./images/self-portrait/badminton.png" width="300" alt="LGM" style="border-style: none" align="top">
-          </a></p></td>
-          <td width="50%" valign="middle"><p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.25;">
-              <ul>
-                <li><b>Chinese National First-Class Athlete</b> 
-                  <ul>
-                    <li>Highest lifelong honor for semi-professional athletes</li>	
-                  </ul>
-                </li>
-                <li>National 8th place in Badminton Men's Singles</li>
-                <li>Zhejiang Provincial 🥇🥈 &nbsp; <a href="https://www.bilibili.com/video/BV1ao4y1t7LJ/?spm_id_from=333.999.0.0&vd_source=24a1de585eee62ca4067d60b85fe0d92"> <img src="https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=$.data.stat.view&url=https://api.bilibili.com/x/web-interface/view?bvid=BV1kK4y1P7FJ" alt="bilibili"> <img src="https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=$.data.stat.view&url=https://api.bilibili.com/x/web-interface/view?bvid=BV1ao4y1t7LJ" alt="bilibili"></a></li>
-                <li>Fujian Provincial 🥈🥈🥉🥉</li>
-                <li>Xiamen Municipal 🥇🥇🥇🥇🥇🥇🥇</li>
-              </ul>
-          </p></td>
-        </tr></tbody>
-      </table>
-      
-      <p id="readMoreDiv3"><a href="javascript:void(0);" onclick="ShowHide('HiddenDiv3', 'readMoreDiv3')" class="read-more-link">show more</a></p>
-      <div class="mid" id="HiddenDiv3" style="display: none;">	
-        <table>
-          <tbody><tr>
-            <td width="100%">
-              <p style="margin-top: 3px; margin-bottom: 3px; line-height: 1.25;">
-                💡 I am interested in tech-empowered entrepreneurship and I was selected for a distinguished minor program in innovation and entrepreneurship with honors.
-                <br><br>
-                🎤 To promote information technology, I've been an invited speaker on national TV and provincial radio, as well as the host of a Turing Seminar with Monty, the admirable creator of MySQL.
-                <br><br>
-                💖 I have a passion for philanthropy and participated in several charity events. I am humbled to receive ZJU's highest recognition for my efforts.
-            </p></td>
-          </tr></tbody>
-        </table>
-      </div>
-    
-    <table style="width:16%;max-width:400px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-      <tbody><tr>
-        <td style="width:100%; vertical-align:middle; text-align:center;"><p>
-          <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=O8suamHxmsJ0Q9xPWGTZ-axPrNLubvMXcLlaLEJQwzk"></script>
-        </a></p></td>
-      </tr></tbody>
-    </table>
-    </div>
-  </div>
-</div>
--->
-
-<footer class="site-footer">
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>Email:</li>
-          <li><a href="mailto:">zhuoran.li [at] u [dot] nus [dot] edu</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
-          <a href="https://scholar.google.com/citations?user=NcQERBIAAAAJ&hl=en" class="icon-button github">
-          <i class="ai ai-google-scholar-square icon-github"></i>
-            <span></span>
+    <section id="publications" class="page-section" data-nav-section data-nav-label="Publications" tabindex="-1">
+      <header class="section-heading research-heading">
+        <h2 class="section-title" id="research-heading">Publications</h2>
+        <button class="research-toggle" id="research-toggle" type="button" aria-controls="research-papers" aria-expanded="true" hidden>Show selected</button>
+      </header>
+      <p class="paper-meta-note">* Equal Contribution &nbsp; · &nbsp; † Equal Advising</p>
+      <p class="sr-only" id="research-status" role="status" aria-live="polite"></p>
+      <div id="research-papers">
+        <article id="paw" class="paper-row highlight-paper" data-highlight="true" aria-labelledby="paw-title">
+          <a class="paper-figure" href="publications/paw-learning-to-plan.webp" data-figure data-caption="Figure 3. Learning to plan with the abstract world model." aria-label="Enlarge Figure 3 from the PAW paper">
+            <img src="publications/paw-learning-to-plan.webp" alt="The initial belief leaves the kettle’s contents unknown. The planner inspects the kettle, predicts an updated belief, and then moves the empty kettle to the sink." width="2602" height="603" loading="lazy">
           </a>
-
-          <a href="https://github.com/zhuoranli23" class="icon-button github">
-            <i class="fa fa-github icon-github"></i>
-            <span></span>
+          <div class="paper-content">
+            <h3 id="paw-title" class="papertitle">Learning to Plan with Natural-Language World Models from Human Egocentric Videos</h3>
+            <p class="authors"><a class="author-self" href="#about">Zhuoran Li</a>, <a href="https://tashakim.info/">Tasha Kim</a>, <a href="https://jfisher52.github.io/">Jillian Fisher</a>, <a href="https://chan0park.github.io/">Chan Young Park</a>, <a href="https://yejinc.github.io/">Yejin Choi</a>, <a href="https://www.weiyuliu.com/">Weiyu Liu</a><sup>†</sup>, <a href="https://www.comp.nus.edu.sg/~dyhsu/">David Hsu</a><sup>†</sup>, <a href="https://jiajunwu.com/">Jiajun Wu</a><sup>†</sup></p>
+            <p class="venue-full">Under Review, 2026</p>
+            <p class="paper-description">PAW learns a natural-language abstract world model from unlabelled egocentric videos and uses it to <strong>reconstruct state–action supervision</strong>. The same world model <strong>conditions the planner</strong> during supervised fine-tuning and inference, enabling <strong>planning beyond demonstrated procedures</strong> by recombining familiar actions to reach a given goal.</p>
+          </div>
+        </article>
+        <article id="d3fields" class="paper-row highlight-paper" data-highlight="true" aria-labelledby="d3fields-title">
+          <a class="paper-figure" href="publications/d3fields.gif" data-figure data-caption="D³Fields uses dynamic 3D descriptors for robotic rearrangement." aria-label="Enlarge the D³Fields figure">
+            <img src="publications/d3fields.gif" alt="D³Fields robotic rearrangement demonstration" width="506" height="284" loading="lazy">
           </a>
-
-          <a href="https://twitter.com/david_zhuoranli" class="icon-button twitter">
-            <i class="fa fa-twitter icon-twitter"></i>
-            <span></span>
+          <div class="paper-content">
+            <h3 id="d3fields-title" class="papertitle"><a href="https://robopil.github.io/d3fields/">D³Fields: Dynamic 3D Descriptor Fields for Zero-Shot Generalizable Rearrangement</a></h3>
+            <p class="authors"><a href="https://wangyixuan12.github.io/">Yixuan Wang</a><sup>*</sup>, <a href="https://robo-alex.github.io/">Mingtong Zhang</a><sup>*</sup>, <span class="author-self">Zhuoran Li</span><sup>*</sup>, <a href="https://kelestemur.com/">Tarik Kelestemur</a>, <a href="https://krdc.web.illinois.edu/">Katherine Driggs-Campbell</a>, <a href="https://jiajunwu.com/">Jiajun Wu</a>, <a href="https://profiles.stanford.edu/fei-fei-li">Li Fei-Fei</a>, <a href="https://yunzhuli.github.io/">Yunzhu Li</a></p>
+            <p class="venue-full">Conference on Robot Learning (CoRL), 2024 · Oral Presentation</p>
+            <p class="paper-description">A robot uses a dynamic 3D descriptor field to match objects across scenes and rearrange them according to a goal image.</p>
+            <div class="paper-links-group">
+              <a class="link-with-icon" href="https://robopil.github.io/d3fields/d3fields.pdf"><img src="assets/icons/paper.svg" alt="" width="22" height="22">Paper</a>
+              <a class="link-with-icon" href="https://robopil.github.io/d3fields/"><img src="assets/icons/project-page.svg" alt="" width="22" height="22">Project</a>
+              <a class="link-with-icon" href="https://github.com/WangYixuan12/d3fields"><img src="assets/icons/github.svg" alt="" width="22" height="22">Code</a>
+            </div>
+          </div>
+        </article>
+        <article id="roboexp" class="paper-row" data-highlight="false" aria-labelledby="roboexp-title">
+          <a class="paper-figure" href="publications/roboexp.jpg" data-figure data-caption="RoboEXP builds an action-conditioned scene graph through interactive exploration." aria-label="Enlarge the RoboEXP figure">
+            <img src="publications/roboexp.jpg" alt="RoboEXP scene exploration and action-conditioned scene graph" width="2000" height="1000" loading="lazy">
           </a>
-
-          <a href="https://www.linkedin.com/in/zhuoran-li-david/" class="icon-button linkedin">
-            <i class="fa fa-linkedin icon-linkedin"></i>
-            <span></span>
-          </a>
-
-          <a href="files/Zhuoran Li - CV.pdf" class="icon-button github">
-            <i class="ai ai-cv icon-github"></i>
-            <span></span>
-          </a>
+          <div class="paper-content">
+            <h3 id="roboexp-title" class="papertitle"><a href="https://jianghanxiao.github.io/roboexp-web/">RoboEXP: Action-Conditioned Scene Graph via Interactive Exploration for Robotic Manipulation</a></h3>
+            <p class="authors"><a href="https://jianghanxiao.github.io/">Hanxiao Jiang</a>, <a href="https://binghao-huang.github.io/">Binghao Huang</a>, <a href="https://warshallrho.github.io/">Ruihai Wu</a>, <span class="author-self">Zhuoran Li</span>, <a href="https://www.gargshubham.com/">Shubham Garg</a>, <a href="https://www.amazon.science/author/hooshang-nayyeri">Hooshang Nayyeri</a>, <a href="https://shenlong.web.illinois.edu/">Shenlong Wang</a>, <a href="https://yunzhuli.github.io/">Yunzhu Li</a></p>
+            <p class="venue-full">Conference on Robot Learning (CoRL), 2024</p>
+            <ul class="paper-honors" aria-label="Workshop honors">
+              <li><a href="https://vlmnm-workshop.github.io/" title="Workshop on Vision-Language Models for Navigation and Manipulation">VLMNM @ ICRA 2024</a><span class="honor-badge">Best Paper Award Nominee</span></li>
+              <li><a href="https://vision-language-adr.github.io/" title="Workshop on Vision and Language for Autonomous Driving and Robotics">VLADR @ CVPR 2024</a><span class="honor-badge">Oral Presentation</span></li>
+            </ul>
+            <p class="paper-description">The robot explores by acting on objects, recording what each action reveals in a scene graph.</p>
+            <div class="paper-links-group">
+              <a class="link-with-icon" href="https://jianghanxiao.github.io/roboexp-web/roboexp.pdf"><img src="assets/icons/paper.svg" alt="" width="22" height="22">Paper</a>
+              <a class="link-with-icon" href="https://jianghanxiao.github.io/roboexp-web/"><img src="assets/icons/project-page.svg" alt="" width="22" height="22">Project</a>
+              <a class="link-with-icon" href="https://github.com/Jianghanxiao/RoboEXP"><img src="assets/icons/github.svg" alt="" width="22" height="22">Code</a>
+            </div>
+          </div>
+        </article>
       </div>
-	<div class="footer-col footer-col-3">
-    <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fzhuoranli23.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=waze.svg&icon_color=%23E7E7E7&title=visits&edge_flat=false"/></a>
-		<p class="text">The style of this website is borrowed from <a href='http://hexianghu.com/'>Hexiang Hu's</a>.</p>
-	</div>
-  </div>
-  </div>
+    </section>
 
-</footer>
-    <div class="back-to-top">Top</div>
+    <section id="education" class="page-section" data-nav-section data-nav-label="Education" tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">Education</h2></header>
+      <div class="institution-row education-row">
+        <div class="institution-logo"><img src="images/icon/stanford.png" alt="" loading="lazy"></div>
+        <div class="institution-copy">
+          <h3><a href="https://www.stanford.edu/">Stanford University</a></h3>
+          <p>M.S. in Computer Science</p>
+        </div>
+        <p class="institution-date">Sep 2026 – Present</p>
+      </div>
+      <div class="institution-row education-row">
+        <div class="institution-logo"><img src="images/icon/NUS.jpg" alt="" loading="lazy"></div>
+        <div class="institution-copy">
+          <h3><a href="https://nus.edu.sg/">National University of Singapore</a></h3>
+          <p>B.Sc. (Honours) in Data Science and Analytics</p>
+          <p class="work-detail">Highest Distinction</p>
+        </div>
+        <p class="institution-date">Aug 2019 – Jun 2024</p>
+      </div>
+    </section>
 
-<script type="text/javascript">
-jQuery(document).ready(function() {
-    var offset = 220;
-    var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-    
-        }
-    });
-    jQuery('.back-to-top').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-    })
-});
-</script>
+    <section id="timeline" class="page-section" data-nav-section data-nav-label="Experience" tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">Research Experience</h2></header>
+      <div class="institution-row">
+        <div class="institution-logo"><img src="images/icon/stanford_nus.png" alt="" loading="lazy"></div>
+        <div class="institution-copy">
+          <h3>Stanford University &amp; National University of Singapore</h3>
+          <p>Research Assistant · Stanford Vision and Learning Lab &amp; AdaComp</p>
+          <p class="work-detail">Independently led <a href="#paw">PAW</a> under the guidance of <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a>, <a href="https://www.comp.nus.edu.sg/~dyhsu/">Prof. David Hsu</a>, and <a href="https://www.weiyuliu.com/">Prof. Weiyu Liu</a>.</p>
+        </div>
+        <p class="institution-date">Jun 2025 – Sep 2026</p>
+      </div>
+      <div class="institution-row">
+        <div class="institution-logo"><img src="images/icon/NUS.jpg" alt="" loading="lazy"></div>
+        <div class="institution-copy">
+          <h3>National University of Singapore</h3>
+          <p>Undergraduate Research Assistant · GLOW.AI</p>
+          <p class="work-detail">Studied language models for planning under uncertainty in my honours thesis with <a href="https://www.comp.nus.edu.sg/cs/people/lowkh/">Prof. Bryan Kian Hsiang Low</a>.</p>
+        </div>
+        <p class="institution-date">Sep 2023 – May 2024</p>
+      </div>
+      <div class="institution-row">
+        <div class="institution-logo"><img src="images/icon/uiuc.png" alt="" loading="lazy"></div>
+        <div class="institution-copy">
+          <h3>University of Illinois Urbana-Champaign</h3>
+          <p>Undergraduate Research Assistant · RoboPIL</p>
+          <p class="work-detail">Worked on <a href="#roboexp">RoboEXP</a> with <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a>.</p>
+        </div>
+        <p class="institution-date">Oct 2023 – Feb 2024</p>
+      </div>
+      <div class="institution-row">
+        <div class="institution-logo"><img src="images/icon/stanford.png" alt="" loading="lazy"></div>
+        <div class="institution-copy">
+          <h3>Stanford University</h3>
+          <p>Undergraduate Visiting Research Intern · Stanford Vision and Learning Lab</p>
+          <p class="work-detail">Worked on <a href="#d3fields">D³Fields</a> with <a href="https://jiajunwu.com/">Prof. Jiajun Wu</a> and <a href="https://yunzhuli.github.io/">Prof. Yunzhu Li</a>.</p>
+        </div>
+        <p class="institution-date">Apr 2023 – Sep 2023</p>
+      </div>
+      <div class="institution-row">
+        <div class="institution-logo"><img src="images/icon/NUS.jpg" alt="" loading="lazy"></div>
+        <div class="institution-copy">
+          <h3>National University of Singapore</h3>
+          <p>Undergraduate Research Assistant · AdaComp</p>
+          <p class="work-detail">Worked on long-horizon visual navigation for a Spot robot with <a href="https://www.comp.nus.edu.sg/~dyhsu/">Prof. David Hsu</a>.</p>
+        </div>
+        <p class="institution-date">Jan 2021 – Aug 2021</p>
+      </div>
+    </section>
+
+    <section id="teaching" class="page-section" data-nav-section data-nav-label="Teaching" tabindex="-1">
+      <header class="section-heading"><h2 class="section-title">Teaching</h2></header>
+      <ul class="news-list">
+        <li><time datetime="2021">Fall 2021</time><p><strong>CS3244 · Machine Learning</strong><br>Teaching Assistant, National University of Singapore</p></li>
+        <li><time datetime="2020">Fall 2020</time><p><strong>CS2040 · Data Structures and Algorithms</strong><br>Teaching Assistant, National University of Singapore</p></li>
+      </ul>
+    </section>
+    <footer class="site-footer">
+      <span>Design adapted from <a href="https://tidalharley.github.io/">Haolin Yang</a>.</span>
+      <a class="back-top" href="#about">Back to top</a>
+    </footer>
+  </main>
+
+  <dialog id="figure-dialog" class="figure-dialog" aria-labelledby="figure-caption">
+    <form method="dialog"><button class="dialog-close" aria-label="Close figure">×</button></form>
+    <figure><img id="figure-image" alt=""><figcaption id="figure-caption"></figcaption></figure>
+  </dialog>
 </body>
-
-<!--
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-60071442-1', 'auto');
-  ga('send', 'pageview');
-</script>
--->
-
-<!--<script src="custom-pub.js"></script>-->
 </html>
