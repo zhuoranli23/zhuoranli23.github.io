@@ -106,6 +106,7 @@ strong { font-weight: 600; }
 .highlight-paper { background: var(--highlight-blue); }
 .paper-figure { display: block; min-width: 0; }
 .paper-figure img { width: 100%; height: auto; max-height: 215px; object-fit: contain; transition: opacity .18s ease; }
+#paw .paper-figure img { max-height: none; }
 .paper-figure:hover img { opacity: .85; }
 .paper-row sup { font-size: .73em; line-height: 0; }
 .authors a { color: inherit; }
